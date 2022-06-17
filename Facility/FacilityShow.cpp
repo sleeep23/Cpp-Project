@@ -8,26 +8,33 @@
 
 using namespace std;
 
-void FacilityShow::showCusGen() {
+void FacilityShow::showFacilityForGeneral() {
     cout << setfill(' ');
-    cout << "                    Facility List for General                  " << endl;
-    cout << "---------------------------------------------------------------" << endl;
+    cout << endl;
+    cout << "###############################################################" << endl << endl;
+    cout << "                    Facility List for General                  " << endl << endl;
+    cout << "###############################################################" << endl << endl;
     cout << "\t" << setw(20) << "Facility" << "\t" << setw(30)  << "Waiting time" << endl;
     cout << "---------------------------------------------------------------" << endl;
     for (int i = 0; i < FacilityList.size(); i++) {
         cout << "\t" << i + 1 << ". " << setw(20) << FacilityList[i]->getFac_Name() << "\t" << setw(20)
              << FacilityList[i]->getFacT_waiting() << " minute" << endl;
     }
+    cout << endl;
 }
 
-void FacilityShow::showCusMagic() {
+void FacilityShow::showFacilityForMagic() {
     cout << setfill(' ');
-    cout << "          Facility List for Magic Pass         " << endl;
-    cout << "-----------------------------------------------" << endl;
+    cout << endl;
+    cout << "###############################################" << endl << endl;
+    cout << "          Facility List for Magic Pass         " << endl << endl;
+    cout << "###############################################" << endl << endl;
     cout << "\t" << setw(20) << "Facility" << endl;
+    cout << "-----------------------------------------------" << endl;
     for (int i = 0; i < FacilityList.size(); i++) {
         cout << "\t" << i + 1 << ". " << setw(20) << FacilityList[i]->getFac_Name() << endl;
     }
+    cout << endl;
 }
 
 void FacilityShow::showCusMagicTimeList(int facility_index) {
@@ -36,9 +43,10 @@ void FacilityShow::showCusMagicTimeList(int facility_index) {
     int time_interval = FacilityList[facility_index - 1]->getFacT_interval();
 
     int time_index = 1;
-
-    cout << "          Facility Time List for "<< FacilityList[facility_index -1]->getFac_Name()<<"         " << endl;
-    cout << "-------------------------------------------------------------" << endl;
+    cout << endl;
+    cout << "#############################################################" << endl << endl;
+    cout << "          Facility Time List for "<< FacilityList[facility_index -1]->getFac_Name()<<"         " << endl << endl;
+    cout << "#############################################################" << endl << endl;
     for(int start = time_start; start + time_interval <= time_end; start += time_interval) {
 
         cout << "\t" << time_index << ". "
@@ -52,12 +60,15 @@ void FacilityShow::showCusMagicTimeList(int facility_index) {
 
         time_index += 1;
     }
+    cout << endl;
 }
 
 void FacilityShow::showFacilityListForAdmin() {
     cout << endl;
+    cout << "######################################" << endl << endl;
     cout << "   Facility List for Administrator    " << endl << endl;
-    cout << "--------------------------------------" << endl;
+    cout << "######################################" << endl << endl;
+    cout << endl;
     for (int i = 0; i < FacilityList.size(); i++) {
 
         int time_start = FacilityList[i]->getFacT_start();

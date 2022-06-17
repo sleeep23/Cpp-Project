@@ -21,7 +21,7 @@ void CustomerReservation::setReservationMethod() {
         this->Customer->setResMethod("General");
 
         // show Facility List for General
-        showFacility.showCusGen();
+        showFacility.showFacilityForGeneral();
 
         cout << "Enter your number : ";
         cin >> idx_general;
@@ -41,12 +41,12 @@ void CustomerReservation::setReservationMethod() {
             this->Customer->setResT_end(end);
 
             cout << endl;
-            cout << "Reservation Completed" << endl;
+            cout << "Reservation Completed" << endl << endl;
 
             this->Customer->showCustomerReservationInfo();
         } else {
             cout << endl;
-            cout << "Enter only digits!" << endl;
+            cout << "Enter only digits!" << endl << endl;
             setReservationMethod();
         }
 
@@ -58,7 +58,7 @@ void CustomerReservation::setReservationMethod() {
         this->Customer->setResMethod("Magic Pass");
 
         // show Facility List for Magic Pass
-        showFacility.showCusMagic();
+        showFacility.showFacilityForMagic();
 
         cout << "Enter your number : ";
         cin >> idx_magic;

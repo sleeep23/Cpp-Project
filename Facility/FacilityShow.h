@@ -16,8 +16,8 @@ private:
     vector<Facility *> &FacilityList;
 public:
     explicit FacilityShow (vector<Facility *> &FacilityList);
-    void showCusGen();
-    void showCusMagic();
+    void showFacilityForGeneral();
+    void showFacilityForMagic();
     void showCusMagicTimeList(int);
     void showFacilityListForAdmin();
 };

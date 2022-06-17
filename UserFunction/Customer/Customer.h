@@ -2,8 +2,8 @@
 #define Customer_H
 
 #include <iostream>
-#include "User.h"
-#include "TypeCheck.h"
+#include "../User.h"
+#include "../../Error/TypeCheck.h"
 
 using namespace std;
 

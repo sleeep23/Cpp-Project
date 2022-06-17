@@ -1,8 +1,8 @@
 #include <iostream>
 #include "vector"
-#include "FacilityListEdit.h"
-#include "CustomerListEdit.h"
-#include "CustomerLogin.h"
+#include "Facility/FacilityListEdit.h"
+#include "UserFunction/Customer/CustomerListEdit.h"
+#include "UserFunction/Customer/CustomerLogin.h"
 using namespace std;
 
 void isCustomer();

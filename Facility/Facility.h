@@ -2,7 +2,7 @@
 #define C___PROJECT_FACILITY_H
 
 #include <iostream>
-#include "TypeCheck.h"
+#include "../Error/TypeCheck.h"
 
 using namespace std;
 

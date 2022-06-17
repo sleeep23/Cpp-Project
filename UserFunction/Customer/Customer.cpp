@@ -7,6 +7,7 @@ using namespace std;
 
 // Getting Reservation Info
 void Customer::showCustomerReservationInfo() const {
+    cout << "-----------------------------------------------" << endl;
     cout << "Your Reservation Info" << endl << endl;
     cout << "Customer Name : " << User::getName() << endl;
     cout << "Reserved Facility Name : " << this->ResFacility << endl;
@@ -19,6 +20,7 @@ void Customer::showCustomerReservationInfo() const {
     << setfill('0') << setw(2) << ResT_end / 60
     << ":"
     << setfill('0') << setw(2) << ResT_end % 60 << endl;
+    cout << "-----------------------------------------------" << endl;
 }
 
 
