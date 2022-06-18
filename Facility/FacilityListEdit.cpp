@@ -34,45 +34,52 @@ void FacilityListEdit::facilityListView() {
 void FacilityListEdit::createFacility() {
     string name, time_start, time_end, time_interval, time_waiting;
     int time_start_int, time_end_int, time_interval_int, time_waiting_int;
-    int count = 0, step_counter = 0;
+    int step_counter = 0;
 
     auto* p = new TypeCheck(" ");
-
     cout << endl;
     cout << "Enter facility name : ";
     cin >> name;
-
     cout << "Enter facility time start : ";
     cin >> time_start;
 
     if (p->typeCheckingCount(time_start)) {
+        step_counter += 1;
+        cout << "Enter facility time end : ";
+        cin >> time_end;
+    } else {
         cout << endl << "Enter only digits!" << endl;
         createFacility();
-    } else { step_counter += 1; }
-
-    cout << "Enter facility time end : ";
-    cin >> time_end;
+        return;
+    }
 
     if (p->typeCheckingCount(time_end) && step_counter == 1) {
+        step_counter += 1;
+        cout << "Enter facility time interval : ";
+        cin >> time_interval;
+    } else {
         cout << endl << "Enter only digits!" << endl;
         createFacility();
-    } else { step_counter += 1; }
-
-    cout << "Enter facility time interval : ";
-    cin >> time_interval;
+        return;
+    }
 
     if (p->typeCheckingCount(time_interval) && step_counter == 2) {
+        step_counter += 1;
+        cout << "Enter facility time waiting : ";
+        cin >> time_waiting;
+    } else {
         cout << endl << "Enter only digits!" << endl;
         createFacility();
-    } else { step_counter += 1; }
-
-    cout << "Enter facility time waiting : ";
-    cin >> time_waiting;
+        return;
+    }
 
     if (p->typeCheckingCount(time_waiting) && step_counter == 3) {
+        step_counter += 1;
+    } else {
         cout << endl << "Enter only digits!" << endl;
         createFacility();
-    } else { step_counter += 1; }
+        return;
+    }
 
     if (step_counter == 4) {
 
@@ -85,6 +92,11 @@ void FacilityListEdit::createFacility() {
 
         cout << endl;
         cout << "Facility created" << endl;
+        cout << endl;
+
+        delete p;
+
+        return;
     }
 }
 

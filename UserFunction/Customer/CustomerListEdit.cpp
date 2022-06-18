@@ -71,6 +71,7 @@ void CustomerListEdit::createCustomer() {
         cout << endl;
         cout << "Enter only digits!" << endl;
         createCustomer();
+        return;
     }
 }
 

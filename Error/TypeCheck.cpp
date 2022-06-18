@@ -20,14 +20,14 @@ TypeCheck::TypeCheck(string idx) {
     this->idx = idx;
 }
 
-bool TypeCheck::typeCheckingCount(string str) {
+bool TypeCheck::typeCheckingCount(const string& str) {
     setIdx(str);
-    int count = 0;
+    int count;
     auto *p_str = new TypeCheck(str);
     count = p_str->typeChecking();
     delete p_str;
 
-    if (count != str.size()) {
+    if (count == str.size()) {
         return true;
     } else {
         return false;

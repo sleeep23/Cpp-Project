@@ -16,7 +16,7 @@ public:
     explicit TypeCheck (string);
     void setIdx(string);
     int typeChecking();
-    bool typeCheckingCount(string);
+    bool typeCheckingCount(const string&);
 };
 
 
