@@ -8,7 +8,7 @@ using namespace std;
 
 class Administrator : public User{
 public:
-    Administrator() : User("admin", 0, "admin", "1234"){};
+    explicit Administrator() : User("admin", 0, "admin", "1234"){};
 };
 
 #endif

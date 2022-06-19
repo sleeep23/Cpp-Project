@@ -249,12 +249,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Error/TypeCheck.cpp",
+			"path" : "Error/InputTypeCheck.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Error/TypeCheck.h",
+			"path" : "Error/InputTypeCheck.h",
 			"sourceGroupIndex" : 1
 		}
 	],

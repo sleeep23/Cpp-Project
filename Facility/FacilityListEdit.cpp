@@ -36,7 +36,7 @@ void FacilityListEdit::createFacility() {
     int time_start_int, time_end_int, time_interval_int, time_waiting_int;
     int step_counter = 0;
 
-    auto* p = new TypeCheck(" ");
+    auto* p = new InputTypeCheck(" ");
     cout << endl;
     cout << "Enter facility name : ";
     cin >> name;
@@ -106,8 +106,8 @@ void FacilityListEdit::deleteFacility() {
     cout << "Enter the index : ";
     cin >> idx;
 
-    auto *p_counter = new TypeCheck(idx);
-    count = p_counter->typeChecking();
+    auto *p_counter = new InputTypeCheck(idx);
+    count = p_counter->inputTypeChecking();
     delete p_counter;
 
     if (count == idx.size()) {

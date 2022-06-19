@@ -2,7 +2,7 @@
 #define C___PROJECT_FACILITY_H
 
 #include <iostream>
-#include "../Error/TypeCheck.h"
+#include "../Error/InputTypeCheck.h"
 
 using namespace std;
 
@@ -14,7 +14,7 @@ private:
     int FacT_interval;
     int FacT_waiting;
 public:
-    Facility(string name, int start, int end, int interval, int waiting);
+    explicit Facility(string name, int start, int end, int interval, int waiting);
 
     string getFac_Name() const;
     int getFacT_start() const;

@@ -49,8 +49,8 @@ void CustomerListEdit::createCustomer() {
     cout << "Enter age : ";
     cin >> age_str;
 
-    auto* p_counter = new TypeCheck(age_str);
-    count = p_counter->typeChecking();
+    auto* p_counter = new InputTypeCheck(age_str);
+    count = p_counter->inputTypeChecking();
     delete p_counter;
 
     if (count == age_str.size()) {
@@ -82,8 +82,8 @@ void CustomerListEdit::deleteCustomer() {
     cout << "Enter the index : ";
     cin >> idx;
 
-    auto* p_count = new TypeCheck(idx);
-    count = p_count->typeChecking();
+    auto* p_count = new InputTypeCheck(idx);
+    count = p_count->inputTypeChecking();
     delete p_count;
 
     if (count == idx.size()) {

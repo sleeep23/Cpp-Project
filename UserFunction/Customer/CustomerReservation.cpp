@@ -26,8 +26,8 @@ void CustomerReservation::setReservationMethod() {
         cout << "Enter your number : ";
         cin >> idx_general;
 
-        auto* p_counter = new TypeCheck(idx_general);
-        count = p_counter->typeChecking();
+        auto* p_counter = new InputTypeCheck(idx_general);
+        count = p_counter->inputTypeChecking();
         delete p_counter;
 
         if (count == idx_general.size()) {
@@ -63,8 +63,8 @@ void CustomerReservation::setReservationMethod() {
         cout << "Enter your number : ";
         cin >> idx_magic;
 
-        auto* p_counter = new TypeCheck(idx_magic);
-        count = p_counter->typeChecking();
+        auto* p_counter = new InputTypeCheck(idx_magic);
+        count = p_counter->inputTypeChecking();
         delete p_counter;
 
         facility_idx = stoi(idx_magic);
@@ -80,8 +80,8 @@ void CustomerReservation::setReservationMethod() {
         cout << "Enter your number : ";
         cin >> idx_magic_time;
 
-        auto* p_counter_time = new TypeCheck(idx_magic_time);
-        count_time = p_counter_time->typeChecking();
+        auto* p_counter_time = new InputTypeCheck(idx_magic_time);
+        count_time = p_counter_time->inputTypeChecking();
         delete p_counter_time;
 
         if (count_time == idx_magic_time.size()) {

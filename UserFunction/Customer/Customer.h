@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "../User.h"
-#include "../../Error/TypeCheck.h"
+#include "../../Error/InputTypeCheck.h"
 
 using namespace std;
 
@@ -14,7 +14,7 @@ private:
     int ResT_start;
     int ResT_end;
 public:
-    Customer(string name, int age, string id, string pw, string ResMethod = "none", string ResFacility = "none",
+    explicit Customer(string name, int age, string id, string pw, string ResMethod = "none", string ResFacility = "none",
              int ResT_start = 540, int ResT_end = 600) : User(name, age, id, pw) {
         this->ResMethod = ResMethod;
         this->ResFacility = ResFacility;

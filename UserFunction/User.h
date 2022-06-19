@@ -13,7 +13,7 @@ private:
     string id;
     string pw;
 public:
-    User(string name, int age, string id, string pw);
+    explicit User(string name, int age, string id, string pw);
 
     string getName() const;
     int getAge() const;

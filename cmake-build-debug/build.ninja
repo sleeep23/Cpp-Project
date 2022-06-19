@@ -115,8 +115,8 @@ build CMakeFiles/C___project.dir/UserFunction/Customer/CustomerShow.cpp.o: CXX_C
   OBJECT_DIR = CMakeFiles/C___project.dir
   OBJECT_FILE_DIR = CMakeFiles/C___project.dir/UserFunction/Customer
 
-build CMakeFiles/C___project.dir/Error/TypeCheck.cpp.o: CXX_COMPILER__C___project_Debug /Users/sleep23/Desktop/C++$ project/Error/TypeCheck.cpp || cmake_object_order_depends_target_C___project
-  DEP_FILE = CMakeFiles/C___project.dir/Error/TypeCheck.cpp.o.d
+build CMakeFiles/C___project.dir/Error/InputTypeCheck.cpp.o: CXX_COMPILER__C___project_Debug /Users/sleep23/Desktop/C++$ project/Error/InputTypeCheck.cpp || cmake_object_order_depends_target_C___project
+  DEP_FILE = CMakeFiles/C___project.dir/Error/InputTypeCheck.cpp.o.d
   FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++11
   OBJECT_DIR = CMakeFiles/C___project.dir
   OBJECT_FILE_DIR = CMakeFiles/C___project.dir/Error
@@ -129,7 +129,7 @@ build CMakeFiles/C___project.dir/Error/TypeCheck.cpp.o: CXX_COMPILER__C___projec
 #############################################
 # Link the executable C___project
 
-build C___project: CXX_EXECUTABLE_LINKER__C___project_Debug CMakeFiles/C___project.dir/UserFunction/User.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/Customer.cpp.o CMakeFiles/C___project.dir/UserFunction/Administrator/Administrator.cpp.o CMakeFiles/C___project.dir/Facility/Facility.cpp.o CMakeFiles/C___project.dir/main.cpp.o CMakeFiles/C___project.dir/Facility/FacilityShow.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/CustomerListEdit.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/CustomerLogin.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/CustomerReservation.cpp.o CMakeFiles/C___project.dir/Facility/FacilityListEdit.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/CustomerShow.cpp.o CMakeFiles/C___project.dir/Error/TypeCheck.cpp.o
+build C___project: CXX_EXECUTABLE_LINKER__C___project_Debug CMakeFiles/C___project.dir/UserFunction/User.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/Customer.cpp.o CMakeFiles/C___project.dir/UserFunction/Administrator/Administrator.cpp.o CMakeFiles/C___project.dir/Facility/Facility.cpp.o CMakeFiles/C___project.dir/main.cpp.o CMakeFiles/C___project.dir/Facility/FacilityShow.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/CustomerListEdit.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/CustomerLogin.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/CustomerReservation.cpp.o CMakeFiles/C___project.dir/Facility/FacilityListEdit.cpp.o CMakeFiles/C___project.dir/UserFunction/Customer/CustomerShow.cpp.o CMakeFiles/C___project.dir/Error/InputTypeCheck.cpp.o
   FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
   OBJECT_DIR = CMakeFiles/C___project.dir
   POST_BUILD = :
